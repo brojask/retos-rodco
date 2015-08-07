@@ -1,0 +1,17 @@
+<div class="single">
+	<a href="#/" class="btn btn-default"><i class="glyphicon glyphicon-chevron-left"></i>Volver</a>	
+	<div class="single-header">
+		<h1>{{user.name}}</h1>
+	</div>
+	<div class="single-body">
+		<p><strong>Horario: </strong>{{user.schedule}}</p>
+		<p><strong>Descripción: </strong> {{user.grownCrops}}</p>
+		<p><strong>Especialización: </strong>{{user.specialProducts}}</p>
+		<p><strong>Contacto: </strong> {{user.attendantName}} | {{user.phone}} | {{user.email}}</p>		
+	</div>
+	<ui-gmap-google-map center='map.center' zoom='map.zoom'>
+
+	    <ui-gmap-marker coords="marker.coords" options="marker.options" events="marker.events" idkey="marker.id">
+        </ui-gmap-marker>
+	</ui-gmap-google-map>
+</div>

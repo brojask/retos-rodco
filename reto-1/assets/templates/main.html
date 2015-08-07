@@ -1,0 +1,23 @@
+<div class="text-center col-md-10 col-md-offset-1 header">
+	<h1>Reto 2</h1>
+	<!-- <h3>Reto 2</h3> -->
+</div>
+
+<div class="input-group input-group-lg col-md-6 col-md-offset-3">
+	<span class="input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+	<input type="text" class="form-control" placeholder="Filtrar..." ng-model="search">	
+</div>
+
+<div class="col-md-6 col-md-offset-3">
+	<ul class="list-unstyled" id="users">
+		<li ng-repeat="user in users | filter:search" class="animate-list">		
+			<a href="#/user/{{user.id}}">
+				<img ng-src="https://placeholdit.imgix.net/~text?txtsize=33&txt={{user.name}}&w=150&h=150" class="pull-left" style="margin-right:10px;">
+			</a>
+			<a href="#/user/{{user.id}}">{{user.name}}</a>
+			<p>{{user.attendantName}}</p>
+			<p>{{user.email}}</p>
+			<p>{{user.phone}}</p>
+		</li>
+	</ul>
+</div>

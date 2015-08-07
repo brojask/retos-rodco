@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html ng-app="retoApp">
+<head>
+	<meta charset="UTF-8">
+	<title>RETO 2</title>
+	<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/styles.css">
+</head>
+<body ng-controller="MainCtrl">
+	<div class="container-fluid">
+		<div class="row" ng-view></div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular.min.js"></script>
+	<script src="https://code.angularjs.org/1.4.3/angular-resource.min.js"></script>
+	<script src="https://code.angularjs.org/1.4.0-beta.5/angular-route.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.0-beta.5/angular-animate.min.js"></script>
+
+	<script src='https://maps.googleapis.com/maps/api/js?sensor=false'></script>
+	<script src="assets/js/vendor/lodash.min.js"></script>
+	<script src="assets/js/vendor/angular-google-maps.min.js"></script>		
+
+	<script src="assets/js/app.js"></script>
+	<script src="assets/js/services.js"></script>
+	<script src="assets/js/controllers.js"></script>
+</body>
+</html>
